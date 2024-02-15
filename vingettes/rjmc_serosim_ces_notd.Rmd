@@ -18,7 +18,7 @@ source("r/postprocess.r")
 plan(multisession, workers = 12)
 
 
-# Define parameters and priors for ab kinetics model
+#Define parameters and priors for ab kinetics model
 par_tab <- bind_rows( 
     # regression parameters
     add_par_df("a", 0.5, 4, "norm",  1.5, 0.5), # has to be mininum boost      
